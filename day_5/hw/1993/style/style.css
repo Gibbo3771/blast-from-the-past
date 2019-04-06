@@ -1,0 +1,233 @@
+@font-face {
+  font-family: comic-sans-lol;
+  src: url("../fonts/LDFComicSans.ttf");
+}
+
+* {
+  z-index: 0;
+}
+
+*:hover {
+  cursor: url("../cursors/Pikachu.cur"), auto;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: comic-sans-lol;
+  font-size: 18px;
+  /* z-index: 10; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+input,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  cursor: url("../cursors/Pikachu.cur"), auto;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(pink, blue, green, red, yellow, pink);
+}
+
+input,
+textarea,
+select,
+button {
+  background-color: gray;
+  color: yellow;
+  height: 175px;
+  box-shadow: 4px 4px 0 0 red;
+  margin: 10px;
+  font-size: 1.4em;
+  font-family: comic-sans-lol;
+  text-align: center;
+  z-index: 20;
+  /* animation: ripple 0.5s linear infinite; */
+}
+
+input:hover,
+textarea:hover,
+select:hover,
+button:hover {
+  box-shadow: 4px 4px 0 0 green;
+}
+
+label {
+  padding: 10px;
+  color: limegreen;
+  font-size: 2em;
+}
+
+.container {
+  background-color: purple;
+  width: 70vw;
+  min-height: 100%;
+  height: auto;
+  margin-left: 15%;
+}
+
+.flex {
+  display: flex;
+}
+
+.title {
+  color: chartreuse;
+  text-align: center;
+  padding-top: 20px;
+  animation: wee-rotate 0.2s ease-in-out 0.5s infinite alternate;
+  font-size: 5rem;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-width: 600px;
+}
+
+.button-do-it-later {
+  height: 80px;
+  width: 150px;
+  font-size: 1.4rem;
+  transform: rotate(2deg);
+}
+
+.fixed-flex-gifs-left {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 20px;
+  /* top: 220px; */
+  width: 300px;
+  height: 100%;
+}
+
+.fixed-flex-gifs-right {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 50px;
+  top: 0;
+  width: 300px;
+}
+
+.gif {
+  padding: 10px;
+  min-width: 100%;
+  /* max-width: 250px; */
+  z-index: -1;
+}
+
+.i-dont-like-these {
+  width: 190px;
+  height: 140px;
+  position: fixed;
+  top: 45px;
+  left: 25px;
+  padding: 5px;
+  /* transform: rotate(8deg); */
+}
+
+.i-dont-like-these::after {
+  content: "Not like these cute animals?!";
+  position: fixed;
+  color: red;
+  left: 50px;
+  top: 50px;
+  font-size: 1.25rem;
+  transform: rotate(20deg);
+  z-index: 200;
+  border: 3px solid greenyellow;
+  background-color: black;
+  padding: 3px;
+}
+
+.important-stuffz-container {
+  display: flex;
+  width: 60%;
+  flex-wrap: wrap;
+  margin-bottom: 150px;
+}
+
+.todo-item-container {
+  width: 100%;
+  padding: 15px;
+  margin: 10px;
+  box-shadow: 4px 4px 0 0 red;
+}
+
+.todo-item-container > * {
+  padding: 10px;
+}
+
+.separator {
+  border-bottom: 3px solid black;
+}
+
+.scrap-button {
+  width: 50px;
+  height: 50px;
+}
+
+.footer {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: red;
+  box-shadow: inset 0px 0 0px 5px cadetblue;
+  font-size: 2em;
+}
+
+.footer-link:hover {
+  transform: scale(2);
+}
+
+@keyframes wee-rotate {
+  0% {
+    transform: rotate(0.5deg) scale(1);
+  }
+  100% {
+    transform: rotate(-0.5deg) scale(1.035);
+  }
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(150, 118, 187, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 20px rgba(150, 118, 187, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgb(150, 118, 187, 0);
+  }
+}
