@@ -91,23 +91,6 @@ const createMouseParticles = evt => {
   });
 };
 
-// Jesus this lags the shit out of my browser
-// const startPulseOnElements = () => {
-//   const elements = document.getElementsByClassName("pulse");
-//   console.log(elements.length);
-//   for (let e of elements) {
-//     const pulse = element => {
-//       s = 20;
-//       if (s > 20) {
-//         clearInterval(t);
-//       }
-//       element.style.border = "0 0 0 " + s + "px " + randomBgColor();
-//       s += s * 0.2;
-//     };
-//     const t = setInterval(pulse(e), 1);
-//   }
-// };
-
 const addAnimalGifs = data => {
   for (let x = 0; x < data.length; x++) {
     const img = document.createElement("img");

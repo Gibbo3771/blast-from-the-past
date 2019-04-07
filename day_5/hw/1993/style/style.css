@@ -64,6 +64,7 @@ textarea:hover,
 select:hover,
 button:hover {
   box-shadow: 4px 4px 0 0 green;
+  animation: ripple 0.25s linear infinite;
 }
 
 label {
@@ -136,7 +137,7 @@ label {
 }
 
 .gif {
-  padding: 10px;
+  /* padding-top: 10px; */
   min-width: 100%;
   /* max-width: 250px; */
   z-index: -1;
@@ -147,7 +148,7 @@ label {
   height: 140px;
   position: fixed;
   top: 45px;
-  left: 25px;
+  left: 65px;
   padding: 5px;
   /* transform: rotate(8deg); */
 }
@@ -156,11 +157,10 @@ label {
   content: "Not like these cute animals?!";
   position: fixed;
   color: red;
-  left: 50px;
+  left: 75px;
   top: 50px;
   font-size: 1.25rem;
   transform: rotate(20deg);
-  z-index: 200;
   border: 3px solid greenyellow;
   background-color: black;
   padding: 3px;
@@ -207,8 +207,14 @@ label {
   font-size: 2em;
 }
 
+.snoop {
+  position: fixed;
+  bottom: -90px;
+  right: 300px;
+}
+
 .footer-link:hover {
-  transform: scale(2);
+  transform: scale(1.5);
 }
 
 @keyframes wee-rotate {
@@ -222,12 +228,12 @@ label {
 
 @keyframes ripple {
   0% {
-    box-shadow: 0 0 0 0 rgba(150, 118, 187, 0.4);
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 1);
   }
   70% {
-    box-shadow: 0 0 0 20px rgba(150, 118, 187, 0);
+    box-shadow: 0 0 0 10px rgba(255, 0, 0, 0.5);
   }
   100% {
-    box-shadow: 0 0 0 0 rgb(150, 118, 187, 0);
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 1);
   }
 }
